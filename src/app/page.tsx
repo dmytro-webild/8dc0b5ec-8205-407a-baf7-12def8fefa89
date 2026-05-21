@@ -69,7 +69,7 @@ export default function LandingPage() {
            }
         },
       ]}
-      imageSrc="https://img.b2bpic.net/free-photo/view-futuristic-holographic-ui-with-data-graphs_23-2149520999.jpg"
+      imageSrc="https://img.b2bpic.net/free-photo/success-cooperation-people-hands-discussion-business_1418-65.jpg?id=1235725"
       imageClassName="hover:scale-105 transition-all duration-1000 ease-in-out transform scale-100 hover:rotate-2 hover:drop-shadow-[0_0_15px_rgba(16,110,251,0.5)]"
       buttonClassName="hover:scale-110 transition-transform duration-300 ease-in-out"
     />
@@ -191,7 +191,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       plans={[
         {
-          id: "starter",          name: "Starter",          price: "Starts $999",          buttons: [
+          id: "starter",          name: "Starter",          price: "Starter $500",          buttons: [
             {
               text: "Contact",              href: "#contact"},
           ],
@@ -199,7 +199,7 @@ export default function LandingPage() {
             "One-page site",            "Fast delivery",            "Responsive design"],
         },
         {
-          id: "business",          name: "Business",          price: "Starts $1,999",          buttons: [
+          id: "business",          name: "Business",          price: " Basic $800",          buttons: [
             {
               text: "Contact",              href: "#contact"},
           ],
@@ -207,7 +207,7 @@ export default function LandingPage() {
             "Multi-page site",            "SEO setup",            "Optimized layout"],
         },
         {
-          id: "premium",          name: "Premium",          price: "Starts $3,499",          buttons: [
+          id: "premium",          name: "Premium",          price: "Premium $1,200",          buttons: [
             {
               text: "Contact",              href: "#contact"},
           ],
@@ -242,7 +242,8 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterCard
-      logoText="Marcos Digital Studio"
+      logoText="Digital Exelence 
+"
       copyrightText="© 2025 | Marcos Digital Studio"
       socialLinks={[
         {
