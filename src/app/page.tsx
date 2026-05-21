@@ -171,7 +171,7 @@ export default function LandingPage() {
         description="I am accepting new projects. Let's discuss your vision and get started today."
         background={{ variant: "sparkles-gradient" }}
         useInvertedBackground={true}
-        onSubmit={(email) => console.log(email)}
+        onSubmit={(email) => window.location.href = `mailto:mhautomation.service@gmail.com?subject=Inquiry from ${email}&body=New project inquiry from: ${email}`}
       />
   </div>
 
