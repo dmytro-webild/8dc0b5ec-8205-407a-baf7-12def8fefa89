@@ -3,15 +3,15 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
-import FooterCard from '@/components/sections/footer/FooterCard';
-import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
-import MetricCardFourteen from '@/components/sections/metrics/MetricCardFourteen';
+import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
+import HeroCentered from '@/components/sections/hero/HeroCentered';
+import MetricCardEleven from '@/components/sections/metrics/MetricCardEleven';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
-import ProductCardFour from '@/components/sections/product/ProductCardFour';
-import SplitAbout from '@/components/sections/about/SplitAbout';
-import { Instagram } from "lucide-react";
+import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
+import ProductCardOne from '@/components/sections/product/ProductCardOne';
+import TextAbout from '@/components/sections/about/TextAbout';
+import { Instagram, Briefcase, Zap, CheckCircle } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -21,8 +21,8 @@ export default function LandingPage() {
         borderRadius="pill"
         contentWidth="compact"
         sizing="largeSmallSizeMediumTitles"
-        background="noiseDiagonalGradient"
-        cardStyle="glass-depth"
+        background="none"
+        cardStyle="solid"
         primaryButtonStyle="flat"
         secondaryButtonStyle="solid"
         headingFontWeight="semibold"
@@ -42,152 +42,108 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroBillboardScroll
-      background={{ variant: "sparkles-gradient" }}
+      <HeroCentered
+      background={{ variant: "plain" }}
       title="Modern Websites. Built Fast. Designed to Convert."
       description="I design and rebuild websites for businesses that want a clean, professional online presence — fast, simple, and stress-free."
-      buttons={[
-        { 
-           text: "Get a Website", 
-           href: "#contact", 
-           onClick: () => {
-             const el = document.getElementById('contact');
-             el?.scrollIntoView({ behavior: 'smooth' });
-           }
-        },
-        { 
-           text: "View Work", 
-           href: "#portfolio", 
-           onClick: () => {
-             const el = document.getElementById('portfolio');
-             el?.scrollIntoView({ behavior: 'smooth' });
-           }
-        },
+      avatars={[
+        { src: "https://img.b2bpic.net/free-photo/success-cooperation-people-hands-discussion-business_1418-65.jpg?id=1235725", alt: "User" }
       ]}
-      imageSrc="https://img.b2bpic.net/free-photo/success-cooperation-people-hands-discussion-business_1418-65.jpg?id=1235725"
-      imageClassName="hover:scale-105 transition-all duration-1000 ease-in-out transform scale-100 hover:rotate-2"
-      buttonClassName="hover:scale-110 transition-transform duration-300 ease-in-out"
+      avatarText="Trusted by growing brands"
+      buttons={[
+        { text: "Get a Website", href: "#contact" },
+        { text: "View Work", href: "#portfolio" }
+      ]}
     />
   </div>
 
   <div id="about" data-section="about">
-      <SplitAbout
-      textboxLayout="split"
-      useInvertedBackground={false}
+      <TextAbout
       title="About Marcos"
+      tag="My Philosophy"
+      useInvertedBackground={false}
       description="I’m a freelance web designer focused on building clean, modern websites for businesses that need a stronger online presence. My approach is simple: fast communication, clean design, and results-focused work. I keep everything straightforward — no complicated agency process, no delays, just high-quality websites delivered quickly."
-      bulletPoints={[
-        { title: "Fast Communication", description: "Responsive and quick answers." },
-        { title: "Modern Designs", description: "High-converting, clean interfaces." },
-        { title: "Simple Process", description: "No stress, just delivery." },
-      ]}
-      imageSrc="https://img.b2bpic.net/free-photo/close-up-glowing-computer-screen_23-2148700057.jpg"
-      mediaAnimation="slide-up"
     />
   </div>
 
   <div id="services" data-section="services">
-      <FeatureCardTwentyFour
+      <FeatureCardNineteen
       animationType="slide-up"
       textboxLayout="split-description"
       useInvertedBackground={true}
-      features={[
-        { id: "f1", title: "Website Design", author: "Custom Build", description: "Modern, responsive websites built from scratch.", tags: ["New Business", "High Tech"], imageSrc: "http://img.b2bpic.net/free-photo/bucharest-romania-july-30th-2024-corporate-leader-reading-daily-news-online_482257-116998.jpg" },
-        { id: "f2", title: "Website Redesign", author: "Transformation", description: "Transform outdated websites into high-converting sites.", tags: ["Redesign", "Conversion"], imageSrc: "http://img.b2bpic.net/free-photo/top-view-nutritional-counter-app_23-2149880598.jpg" },
-        { id: "f3", title: "SEO Optimization", author: "Growth", description: "Improve visibility and help customers find you.", tags: ["Visibility", "SEO"], imageSrc: "http://img.b2bpic.net/free-vector/gradient-ui-ux-elements_23-2149061049.jpg" },
-      ]}
       title="Services"
       description="Premium web design solutions built for your business growth."
+      features={[
+        { tag: "Design", title: "Website Design", subtitle: "Custom Build", description: "Modern, responsive websites built from scratch.", imageSrc: "http://img.b2bpic.net/free-photo/bucharest-romania-july-30th-2024-corporate-leader-reading-daily-news-online_482257-116998.jpg" },
+        { tag: "Transform", title: "Website Redesign", subtitle: "Transformation", description: "Transform outdated websites into high-converting sites.", imageSrc: "http://img.b2bpic.net/free-photo/top-view-nutritional-counter-app_23-2149880598.jpg" },
+        { tag: "Growth", title: "SEO Optimization", subtitle: "Strategy", description: "Improve visibility and help customers find you.", imageSrc: "http://img.b2bpic.net/free-vector/gradient-ui-ux-elements_23-2149061049.jpg" },
+      ]}
     />
   </div>
 
   <div id="process" data-section="process">
-      <MetricCardFourteen
-      useInvertedBackground={false}
-      title="Simple 3-Step Process"
-      tag="How I Work"
-      metrics={[
-        { id: "m1", value: "01", description: "Contact me with your project goals." },
-        { id: "m2", value: "02", description: "I design a conversion-focused website." },
-        { id: "m3", value: "03", description: "Launch your new digital home." },
-      ]}
-      metricsAnimation="slide-up"
-    />
-  </div>
-
-  <div id="why-me" data-section="why-me">
-      <FeatureCardTwentyFour
+      <MetricCardEleven
       animationType="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={true}
-      features={[
-        { id: "w1", title: "Fast Turnaround", author: "Efficiency", description: "Fast delivery, no stress.", tags: ["Speed", "Quick"], imageSrc: "http://img.b2bpic.net/free-photo/mid-section-unrecognizable-man-taking-picture-work-plan-phone_1098-18712.jpg" },
-        { id: "w2", title: "Premium Design", author: "Aesthetics", description: "Looks professional and modern.", tags: ["Design", "High End"], imageSrc: "http://img.b2bpic.net/free-vector/flat-design-coworking-app-template_23-2150249509.jpg" },
-        { id: "w3", title: "Simple Pricing", author: "Transparency", description: "One-time payment, no contracts.", tags: ["Pricing", "Clear"], imageSrc: "http://img.b2bpic.net/free-vector/modern-infographic-element-collection_52683-1776.jpg" },
+      title="Simple 3-Step Process"
+      description="How I get your project from vision to launch."
+      useInvertedBackground={false}
+      metrics={[
+        { id: "m1", value: "01", title: "Discovery", description: "Contact me with your project goals.", imageSrc: "http://img.b2bpic.net/free-photo/mid-section-unrecognizable-man-taking-picture-work-plan-phone_1098-18712.jpg" },
+        { id: "m2", value: "02", title: "Design", description: "I design a conversion-focused website.", imageSrc: "http://img.b2bpic.net/free-vector/flat-design-coworking-app-template_23-2150249509.jpg" },
+        { id: "m3", value: "03", title: "Launch", description: "Launch your new digital home.", imageSrc: "http://img.b2bpic.net/free-vector/modern-infographic-element-collection_52683-1776.jpg" },
       ]}
-      title="Why Work With Me?"
-      description="You get a website that looks like a premium agency build — without the agency price."
     />
   </div>
 
   <div id="portfolio" data-section="portfolio">
-      <ProductCardFour
+      <ProductCardOne
       animationType="slide-up"
-      textboxLayout="default"
       gridVariant="three-columns-all-equal-width"
+      textboxLayout="default"
       useInvertedBackground={false}
-      products={[
-        { id: "p1", name: "Tech Startup Site", price: "Concept", variant: "Minimal", imageSrc: "https://img.b2bpic.net/premium-photo/digital-technology-global-internet-network-ai-artificial-intelligence-big-data-concept-computer-programmer-software-engineer-coding-laptop-global-network-cyber-security_928174-8320.jpg?id=382220369" },
-        { id: "p2", name: "Local Gym Site", price: "Concept", variant: "Modern", imageSrc: "https://img.b2bpic.net/free-photo/unrecognizable-athletic-woman-tying-sports-shoe-health-club_637285-8468.jpg?id=26402468" },
-        { id: "p3", name: "Real Estate UI", price: "Concept", variant: "Clean", imageSrc: "https://img.b2bpic.net/free-photo/modern-real-estate-website-interface_23-2149806451.jpg" },
-        { id: "p4", name: "Creative Studio", price: "Concept", variant: "Futuristic", imageSrc: "https://img.b2bpic.net/free-vector/architecture-background-design_1168-29.jpg?id=1003664" },
-        { id: "p5", name: "Restaurant Concept", price: "Concept", variant: "Modern", imageSrc: "https://img.b2bpic.net/free-photo/top-view-table-full-food_23-2149209253.jpg?id=21088367" },
-        { id: "p6", name: "SaaS Platform", price: "Concept", variant: "Dark", imageSrc: "https://img.b2bpic.net/free-photo/person-working-relation-innovation_53876-16535.jpg?id=2792075" },
-      ]}
       title="Portfolio"
       description="Showcasing high-quality concept builds."
+      products={[
+        { id: "p1", name: "Tech Startup Site", price: "Concept", imageSrc: "https://img.b2bpic.net/premium-photo/digital-technology-global-internet-network-ai-artificial-intelligence-big-data-concept-computer-programmer-software-engineer-coding-laptop-global-network-cyber-security_928174-8320.jpg?id=382220369" },
+        { id: "p2", name: "Local Gym Site", price: "Concept", imageSrc: "https://img.b2bpic.net/free-photo/unrecognizable-athletic-woman-tying-sports-shoe-health-club_637285-8468.jpg?id=26402468" },
+        { id: "p3", name: "Real Estate UI", price: "Concept", imageSrc: "https://img.b2bpic.net/free-photo/modern-real-estate-website-interface_23-2149806451.jpg" },
+      ]}
     />
   </div>
 
   <div id="pricing" data-section="pricing">
-      <PricingCardThree
+      <PricingCardFive
       animationType="slide-up"
+      title="Simple Pricing"
+      description="Transparent, one-time payment options."
       textboxLayout="default"
       useInvertedBackground={true}
       plans={[
-        { id: "starter", name: "Starter", price: "Starter $500", buttons: [{ text: "Contact", href: "#contact" }], features: ["One-page site", "Fast delivery", "Responsive design"] },
-        { id: "business", name: "Business", price: " Basic $800", buttons: [{ text: "Contact", href: "#contact" }], features: ["Multi-page site", "SEO setup", "Optimized layout"] },
-        { id: "premium", name: "Premium", price: "Premium $1,200", buttons: [{ text: "Contact", href: "#contact" }], features: ["Advanced design", "Full branding", "Custom animations"] },
+        { id: "starter", tag: "Standard", price: "$500", period: "one-time", description: "Basic site for small brands.", button: { text: "Select Plan" }, featuresTitle: "Core Features", features: ["One-page site", "Mobile responsive", "Fast delivery"] },
+        { id: "business", tag: "Advanced", price: "$800", period: "one-time", description: "Full site for growth.", button: { text: "Select Plan" }, featuresTitle: "Core Features", features: ["Multi-page site", "SEO setup", "Conversion optimized"] },
       ]}
-      title="Simple Pricing"
-      description="One-time payment options available. No confusing contracts."
     />
   </div>
 
   <div id="contact" data-section="contact">
       <ContactSplit
-        tag="Ready to start?"
+        tag="Get in Touch"
         title="Let’s Build Your Website"
-        description="I am accepting new projects. Let's discuss your vision and get started today."
-        background={{ variant: "sparkles-gradient" }}
+        description="Ready to start? I am accepting new projects."
+        background={{ variant: "plain" }}
         useInvertedBackground={true}
-        onSubmit={(email) => window.location.href = `mailto:mhautomation.service@gmail.com?subject=Inquiry from ${email}&body=New project inquiry from: ${email}`}
-        className="py-12 md:py-20 lg:py-24"
-        containerClassName="max-w-7xl mx-auto px-6"
-        contactFormClassName="grid md:grid-cols-2 gap-12 items-center"
-        formClassName="flex flex-col gap-4 bg-white p-8 rounded-2xl shadow-lg"
-        inputClassName="w-full p-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary"
-        buttonClassName="bg-primary text-white font-semibold py-4 rounded-lg hover:opacity-90 transition"
+        onSubmit={(email) => console.log(email)}
       />
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterCard
-      logoText="Digital Excellence"
-      copyrightText="© 2025 | Marcos Digital Studio"
-      socialLinks={[
-        { icon: Instagram, href: "https://instagram.com/marcoswebdesigns", ariaLabel: "Instagram" },
+      <FooterSimple
+      columns={[
+        { title: "Services", items: [{ label: "Design" }, { label: "SEO" }] },
+        { title: "Legal", items: [{ label: "Privacy" }, { label: "Terms" }] },
       ]}
+      bottomLeftText="© 2025 Marcos Digital Studio"
+      bottomRightText="All rights reserved."
     />
   </div>
       </ReactLenis>
