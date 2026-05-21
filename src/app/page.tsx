@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCTA from '@/components/sections/contact/ContactCTA';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
@@ -36,7 +36,7 @@ export default function LandingPage() {
         { name: "Portfolio", id: "portfolio" },
         { name: "Pricing", id: "pricing" },
       ]}
-      button={{ text: "Contact", href: "#contact" }}
+      button={{ text: "Let's Chat", href: "#contact" }}
       brandName="Marcos Digital Studio"
     />
   </div>
@@ -165,13 +165,13 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCTA
+      <ContactSplit
         tag="Ready to start?"
         title="Let’s Build Your Website"
         description="I am accepting new projects. Let's discuss your vision and get started today."
-        buttons={[{ text: "Let's Chat", href: "mailto:marcos@digital.studio" }]}
         background={{ variant: "sparkles-gradient" }}
         useInvertedBackground={true}
+        onSubmit={(email) => console.log(email)}
       />
   </div>
 
