@@ -62,13 +62,11 @@ export default function LandingPage() {
       title="About Marcos"
       tag="My Philosophy"
       useInvertedBackground={false}
-      description="I’m a freelance web designer focused on building clean, modern websites for businesses that need a stronger online presence. My approach is simple: fast communication, clean design, and results-focused work. I keep everything straightforward — no complicated agency process, no delays, just high-quality websites delivered quickly."
     />
   </div>
 
   <div id="services" data-section="services">
       <FeatureCardNineteen
-      animationType="slide-up"
       textboxLayout="split-description"
       useInvertedBackground={true}
       title="Services"
@@ -86,6 +84,7 @@ export default function LandingPage() {
       animationType="slide-up"
       title="Simple 3-Step Process"
       description="How I get your project from vision to launch."
+      textboxLayout="split-description"
       useInvertedBackground={false}
       metrics={[
         { id: "m1", value: "01", title: "Discovery", description: "Contact me with your project goals.", imageSrc: "http://img.b2bpic.net/free-photo/mid-section-unrecognizable-man-taking-picture-work-plan-phone_1098-18712.jpg" },
