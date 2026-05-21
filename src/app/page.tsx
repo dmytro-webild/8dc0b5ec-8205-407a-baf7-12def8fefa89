@@ -172,6 +172,12 @@ export default function LandingPage() {
         background={{ variant: "sparkles-gradient" }}
         useInvertedBackground={true}
         onSubmit={(email) => window.location.href = `mailto:mhautomation.service@gmail.com?subject=Inquiry from ${email}&body=New project inquiry from: ${email}`}
+        className="py-12 md:py-20 lg:py-24"
+        containerClassName="max-w-7xl mx-auto px-6"
+        contactFormClassName="grid md:grid-cols-2 gap-12 items-center"
+        formClassName="flex flex-col gap-4 bg-white p-8 rounded-2xl shadow-lg"
+        inputClassName="w-full p-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary"
+        buttonClassName="bg-primary text-white font-semibold py-4 rounded-lg hover:opacity-90 transition"
       />
   </div>
 
