@@ -7,7 +7,7 @@ import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNinete
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroCentered from '@/components/sections/hero/HeroCentered';
 import MetricCardEleven from '@/components/sections/metrics/MetricCardEleven';
-import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TextAbout from '@/components/sections/about/TextAbout';
@@ -29,14 +29,13 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarStyleCentered
+      <NavbarStyleApple
       navItems={[
         { name: "Services", id: "services" },
         { name: "Process", id: "process" },
         { name: "Portfolio", id: "portfolio" },
         { name: "Pricing", id: "pricing" },
       ]}
-      button={{ text: "Let's Chat", href: "#contact" }}
       brandName="Marcos Digital Studio"
     />
   </div>
@@ -119,7 +118,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       plans={[
         { id: "starter", tag: "Standard", price: "$500", period: "one-time", description: "Basic site for small brands.", button: { text: "Select Plan" }, featuresTitle: "Core Features", features: ["One-page site", "Mobile responsive", "Fast delivery"] },
-        { id: "business", tag: "Advanced", price: "$800", period: "one-time", description: "Full site for growth.", button: { text: "Select Plan" }, featuresTitle: "Core Features", features: ["Multi-page site", "SEO setup", "Conversion optimized"] },
+        { id: "business", tag: "Advanced (Premium)", price: "$800", period: "one-time", description: "Full site for growth.", button: { text: "Select Plan" }, featuresTitle: "Core Features", features: ["Multi-page site", "SEO setup", "Conversion optimized"] },
       ]}
     />
   </div>
