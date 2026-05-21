@@ -70,7 +70,7 @@ export default function LandingPage() {
         },
       ]}
       imageSrc="https://img.b2bpic.net/free-photo/view-futuristic-holographic-ui-with-data-graphs_23-2149520999.jpg"
-      imageClassName="hover:scale-105 transition-transform duration-700 ease-out"
+      imageClassName="hover:scale-105 transition-all duration-1000 ease-in-out transform scale-100 hover:rotate-2 hover:drop-shadow-[0_0_15px_rgba(16,110,251,0.5)]"
       buttonClassName="hover:scale-110 transition-transform duration-300 ease-in-out"
     />
   </div>
