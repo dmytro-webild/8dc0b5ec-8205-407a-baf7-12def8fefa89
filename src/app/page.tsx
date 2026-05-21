@@ -167,17 +167,17 @@ export default function LandingPage() {
       useInvertedBackground={false}
       products={[
         {
-          id: "p1",          name: "Tech Startup Site",          price: "Concept",          variant: "Minimal",          imageSrc: "https://img.b2bpic.net/free-photo/ui-ux-design-template-website-development_23-2149592476.jpg"},
+          id: "p1",          name: "Tech Startup Site",          price: "Concept",          variant: "Minimal",          imageSrc: "https://img.b2bpic.net/premium-photo/digital-technology-global-internet-network-ai-artificial-intelligence-big-data-concept-computer-programmer-software-engineer-coding-laptop-global-network-cyber-security_928174-8320.jpg?id=382220369"},
         {
-          id: "p2",          name: "Local Gym Site",          price: "Concept",          variant: "Modern",          imageSrc: "https://img.b2bpic.net/free-photo/fitness-app-website-ui-design_23-2149633974.jpg"},
+          id: "p2",          name: "Local Gym Site",          price: "Concept",          variant: "Modern",          imageSrc: "https://img.b2bpic.net/free-photo/unrecognizable-athletic-woman-tying-sports-shoe-health-club_637285-8468.jpg?id=26402468"},
         {
           id: "p3",          name: "Real Estate UI",          price: "Concept",          variant: "Clean",          imageSrc: "https://img.b2bpic.net/free-photo/modern-real-estate-website-interface_23-2149806451.jpg"},
         {
-          id: "p4",          name: "Creative Studio",          price: "Concept",          variant: "Futuristic",          imageSrc: "https://img.b2bpic.net/free-photo/creative-studio-portfolio-web-layout_23-2149863489.jpg"},
+          id: "p4",          name: "Creative Studio",          price: "Concept",          variant: "Futuristic",          imageSrc: "https://img.b2bpic.net/free-vector/architecture-background-design_1168-29.jpg?id=1003664"},
         {
-          id: "p5",          name: "Restaurant Concept",          price: "Concept",          variant: "Modern",          imageSrc: "https://img.b2bpic.net/free-photo/restaurant-website-interface-design_23-2149725983.jpg"},
+          id: "p5",          name: "Restaurant Concept",          price: "Concept",          variant: "Modern",          imageSrc: "https://img.b2bpic.net/free-photo/top-view-table-full-food_23-2149209253.jpg?id=21088367"},
         {
-          id: "p6",          name: "SaaS Platform",          price: "Concept",          variant: "Dark",          imageSrc: "https://img.b2bpic.net/free-photo/saas-dashboard-ui-design_23-2149889502.jpg"},
+          id: "p6",          name: "SaaS Platform",          price: "Concept",          variant: "Dark",          imageSrc: "https://img.b2bpic.net/free-photo/person-working-relation-innovation_53876-16535.jpg?id=2792075"},
       ]}
       title="Portfolio"
       description="Showcasing high-quality concept builds."
