@@ -23,8 +23,8 @@ export default function LandingPage() {
         sizing="largeSmallSizeMediumTitles"
         background="noiseDiagonalGradient"
         cardStyle="glass-depth"
-        primaryButtonStyle="double-inset"
-        secondaryButtonStyle="glass"
+        primaryButtonStyle="flat"
+        secondaryButtonStyle="solid"
         headingFontWeight="semibold"
     >
       <ReactLenis root>
@@ -70,7 +70,7 @@ export default function LandingPage() {
         },
       ]}
       imageSrc="https://img.b2bpic.net/free-photo/success-cooperation-people-hands-discussion-business_1418-65.jpg?id=1235725"
-      imageClassName="hover:scale-105 transition-all duration-1000 ease-in-out transform scale-100 hover:rotate-2 hover:drop-shadow-[0_0_15px_rgba(16,110,251,0.5)]"
+      imageClassName="hover:scale-105 transition-all duration-1000 ease-in-out transform scale-100 hover:rotate-2"
       buttonClassName="hover:scale-110 transition-transform duration-300 ease-in-out"
     />
   </div>
@@ -242,8 +242,7 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterCard
-      logoText="Digital Exelence 
-"
+      logoText="Digital Excellence"
       copyrightText="© 2025 | Marcos Digital Studio"
       socialLinks={[
         {
