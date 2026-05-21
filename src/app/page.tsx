@@ -53,12 +53,25 @@ export default function LandingPage() {
       title="Modern Websites. Built Fast. Designed to Convert."
       description="I design and rebuild websites for businesses that want a clean, professional online presence — fast, simple, and stress-free."
       buttons={[
-        {
-          text: "Get a Website",          href: "#contact"},
-        {
-          text: "View Work",          href: "#portfolio"},
+        { 
+           text: "Get a Website", 
+           href: "#contact", 
+           onClick: () => {
+             const el = document.getElementById('contact');
+             el?.scrollIntoView({ behavior: 'smooth' });
+           }
+        },
+        { 
+           text: "View Work", 
+           href: "#portfolio",           onClick: () => {
+             const el = document.getElementById('portfolio');
+             el?.scrollIntoView({ behavior: 'smooth' });
+           }
+        },
       ]}
       imageSrc="https://img.b2bpic.net/free-photo/view-futuristic-holographic-ui-with-data-graphs_23-2149520999.jpg"
+      imageClassName="hover:scale-105 transition-transform duration-700 ease-out"
+      buttonClassName="hover:scale-110 transition-transform duration-300 ease-in-out"
     />
   </div>
 
