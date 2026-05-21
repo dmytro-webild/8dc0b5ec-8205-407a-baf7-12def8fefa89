@@ -10,8 +10,8 @@ import { Archivo } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'Marcos Digital Studio | Modern & Fast Website Design',
-  description: 'Freelance web designer Marcos builds high-quality, conversion-focused websites for small businesses, startups, and personal brands. Fast delivery, stress-free process.',
+  title: "Marcos Digital Studio | Modern & Fast Website Design",
+  description: "Freelance web designer Marcos builds high-quality, conversion-focused websites for small businesses, startups, and personal brands. Fast delivery, stress-free process.",
   keywords: ["website designer Sacramento, small business website design, affordable website redesign, modern web design services, SEO optimization, freelance web designer California"],
 };
 
